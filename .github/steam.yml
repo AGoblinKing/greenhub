@@ -1,0 +1,39 @@
+name: Steam Deploy
+# https://github.com/CyberAndrii/setup-steamcmd/blob/master/.github/workflows/integration.yml based on
+on:
+  push:
+    branches:
+      - main
+  
+  paths:
+    - 'package.json'
+
+
+jobs:
+  login:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Setup steamcmd
+      uses: ./
+
+    - name: Login anonymously
+      run: steamcmd +login anonymous +quit
+      # PowerShell (default on Windows) hides some error messages
+      shell: bash
+  
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: "Install deps"
+      shell: "bash"
+      run: "npm install"
+      
+    - name: "Build electron"
+      shell: "bash"
+      run: "npm run dist"
+    
+

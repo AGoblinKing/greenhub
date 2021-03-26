@@ -1,0 +1,46 @@
+{
+	"name": "green-hub",
+	"version": "0.0.1",
+	"author": "A Goblin King",
+	"license": "MIT",
+	"description": "Deploy and build games to Steam / Itch using Electron and Greenworks with GitHub Actions",
+	"greenhub": {
+		"live": "app://index.html?live",
+		"dev": "app://index.html?dev"
+	},
+	"scripts": {
+		"dev": "electron . --dev",
+		"pack": "electron-builder --dir",
+		"dist": "electron-builder ",
+		"start": "electron ."
+	},
+	"build": {
+		"appId": "GreenHub",
+		"mac": {
+			"category": "app.game"
+		},
+		"win": {
+			"fileAssociations": [
+				{
+					"ext": "hub",
+					"name": "Drag Onto GreenHub",
+					"description": "How Lucky! You found a GreenHub Binary! +5 to encumbrance ",
+					"role": "Editor",
+					"icon": "build/win.ico"
+				}
+			],
+			"icon": "build/win.ico",
+			"target": "portable"
+		}
+	},
+	"main": "./electron/main.js",
+	"devDependencies": {
+		"electron": "^11.1.1",
+		"electron-builder": "^22.9.1"
+	},
+	"dependencies": {
+		"greenworks": "./greenworks",
+		"electron-dl": "^3.0.2",
+		"electron-serve": "^1.1.0"
+	}
+}
