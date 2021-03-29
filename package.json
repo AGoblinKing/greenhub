@@ -49,7 +49,7 @@
 		"electron-builder": "^22.9.1"
 	},
 	"dependencies": {
-		"greenworks": "./greenworks",
+		"greenworks": "./platforms/electron/greenworks",
 		"electron-dl": "^3.0.2",
 		"electron-serve": "^1.1.0"
 	}
