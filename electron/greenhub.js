@@ -62,30 +62,7 @@ function Settings(windowName) {
 	}
 }
 
-// prevent anything but scripts from the origin on not dev
-function setupSession() {
-	if (!dev) {
-		session.defaultSession.webRequest.onHeadersReceived((details, callback) => {
-			callback({
-				responseHeaders: {
-					...details.responseHeaders,
-					'Content-Security-Policy': ["script-src 'self'"],
-				},
-			})
-		})
-	}
-}
-
-const state = {
-	_v: 1,
-	dev,
-	native: true,
-	offline: false,
-}
-
 function createWindow() {
-	setupSession()
-
 	root(win)
 
 	const mainWindowStateKeeper = Settings('main')
