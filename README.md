@@ -1,13 +1,14 @@
 # GreenHub
 
-Use GitHub as a Continuous Deployment Engine to Steam using Electron and GreenWorks.
+Use GitHub as a Continuous Deployment Engine to Game Platforms using Electron and Cordova.
 
 # Tasks
 
 - [x] Setup Template Repo
-- [ ] Setup GitHub Actions to build Electron binaries
+- [x] Setup GitHub Actions to build Electron binaries
   - store as a release
 - [ ] Setup Deployment Actions
+  - Itch
 - [ ] Ensure overlay works
 - [ ] Documentation/Examples
 
