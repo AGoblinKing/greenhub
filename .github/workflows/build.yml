@@ -37,5 +37,5 @@ jobs:
         prerelease: false
         title: "GreenHub Build"
         files: |
-          dist/*.exe |
-          platforms/android/app/build/outputs/apk/**/*.apk
+          dist/*.exe
+          platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk
