@@ -13,7 +13,7 @@
 		"pack": "electron-builder --dir",
 		"dist": "electron-builder ",
 		"start": "electron .",
-		"android": "cordova build --no-telemetry"
+		"android": "cordova build --release --no-telemetry"
 	},
 	"build": {
 		"appId": "GreenHub",
