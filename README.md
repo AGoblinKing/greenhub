@@ -28,7 +28,7 @@ A developer commits a bunch of client files to the repo which triggers GitHub Ac
 
 # Quick Start
 
-    - [ ] Commit your website's code in the public directory on github
+    - [ ] Commit your website's code in the `www` directory on GitHub, try out the drag n' drop features!
     - [ ] ???
     - [ ] Download the releases
 
