@@ -2,7 +2,7 @@
 	"name": "green-hub",
 	"version": "0.0.1",
 	"author": "A Goblin King",
-	"license": "MIT",
+	"license": "Apache-2.0",
 	"description": "Deploy and build games to Steam / Itch using Electron and Greenworks with GitHub Actions",
 	"greenhub": {
 		"live": "app://index.html?live",
@@ -33,8 +33,18 @@
 			"target": "portable"
 		}
 	},
-	"main": "./electron/main.js",
+	"keywords": [
+		"ecosystem:cordova"
+	],
+	"cordova": {
+		"plugins": {
+			"cordova-plugin-whitelist": {}
+		}
+	},
+	"main": "./platforms/electron/main.js",
 	"devDependencies": {
+		"cordova": "^10.0.0",
+		"cordova-android": "^9.0.0",
 		"electron": "^11.1.1",
 		"electron-builder": "^22.9.1"
 	},
