@@ -2,7 +2,7 @@ const { BrowserWindow, app, session } = require('electron')
 const serve = require('electron-serve')
 const electronDl = require('electron-dl')
 
-const { greenhub } = require('../../package.json')
+const { greenhub } = require('../package.json')
 
 electronDl({
 	directory: `${process.cwd()}/offline/saves`,
@@ -109,13 +109,6 @@ function createWindow() {
 
 	mainWindowStateKeeper.track(win)
 
-	win.webContents.on('did-finish-load', () => {
-		win.webContents.executeJavaScript(
-			`window.state.settings.is(${JSON.stringify(state)});`
-		)
-	})
-
-	console.log('greenhub is', greenhub)
 	win.loadURL(dev ? greenhub.dev : greenhub.live)
 }
 

@@ -42,7 +42,7 @@
 			"cordova-plugin-whitelist": {}
 		}
 	},
-	"main": "./electron/main.js",
+	"main": "./electron/greenhub.js",
 	"devDependencies": {
 		"cordova": "^10.0.0",
 		"cordova-android": "^9.0.0",
