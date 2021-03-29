@@ -1,7 +1,7 @@
 name: Build a GreenHub Project
 on: 
   push: 
-    branches: [ $default-branch ]
+    branches: [ "main" ]
     
 jobs:
   build:
