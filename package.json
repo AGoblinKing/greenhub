@@ -12,7 +12,8 @@
 		"dev": "electron . --dev",
 		"pack": "electron-builder --dir",
 		"dist": "electron-builder ",
-		"start": "electron ."
+		"start": "electron .",
+		"android": "cordova build --no-telemetry"
 	},
 	"build": {
 		"appId": "GreenHub",
@@ -41,7 +42,7 @@
 			"cordova-plugin-whitelist": {}
 		}
 	},
-	"main": "./platforms/electron/main.js",
+	"main": "./electron/main.js",
 	"devDependencies": {
 		"cordova": "^10.0.0",
 		"cordova-android": "^9.0.0",
@@ -49,7 +50,7 @@
 		"electron-builder": "^22.9.1"
 	},
 	"dependencies": {
-		"greenworks": "./platforms/electron/greenworks",
+		"greenworks": "./electron/greenworks",
 		"electron-dl": "^3.0.2",
 		"electron-serve": "^1.1.0"
 	}
