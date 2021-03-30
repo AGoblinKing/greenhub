@@ -7,12 +7,15 @@ jobs:
   build:
     name: Deploy to itch
     runs-on: ubuntu-latest
-    if: ${{ secrets.BUTLER_CREDENTIALS != ''}}
     steps:
       - name: Checkout master
         uses: actions/checkout@master
+      - name: set ITCH_GAME
+        id: ITCH_GAME
+        run: echo '::set-output name=ITCH_GAME::${{secrets.ITCH_GAME}}'
 
       - name: Deploy to itch
+        if: ${{ ITCH_GAME != ''}}
         uses: josephbmanley/butler-publish-itchio-action@master
         env:
           BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
