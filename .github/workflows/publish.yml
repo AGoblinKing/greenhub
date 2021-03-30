@@ -19,4 +19,4 @@ jobs:
           CHANNEL: browser
           ITCH_GAME: ${{ secrets.ITCH_GAME }}
           ITCH_USER: ${{ secrets.ITCH_USER }}
-          PACKAGE: public
+          PACKAGE: www

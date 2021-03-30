@@ -32,8 +32,20 @@ A developer commits a bunch of client files to the repo which triggers GitHub Ac
     - [ ] ???
     - [ ] Download the releases
 
-# Space Magic Integration to Itch.io and Steam
+# Space Magic Integration to Itch.io
 
-    - [ ] Add `SECRETS` to your repository
+    - [ ] Add `SECRETS` to your github repository
+
+```yaml
+- name: Deploy to itch
+  uses: josephbmanley/butler-publish-itchio-action@master
+  env:
+    BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
+    CHANNEL: browser
+    ITCH_GAME: ${{ secrets.ITCH_GAME }}
+    ITCH_USER: ${{ secrets.ITCH_USER }}
+    PACKAGE: www
+```
+
     - [ ] ???
     - [ ] Its released!
