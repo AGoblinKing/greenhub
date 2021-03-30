@@ -7,7 +7,7 @@ Use GitHub as a Continuous Deployment Engine to Game Platforms using Electron an
 - [x] Setup Template Repo
 - [x] Setup GitHub Actions to build Electron binaries
   - store as a release
-- [ ] Setup Deployment Actions
+- [x] Setup Deployment Actions
   - Itch
 - [ ] Ensure overlay works
 - [ ] Documentation/Examples
