@@ -1,6 +1,7 @@
 # GreenHub
 
-![https://corporate-entity.itch.io/greenhub](https://img.shields.io/badge/ITCH.IO-lightgrey?style=for-the-badge)
+[![](https://img.shields.io/badge/ITCH.IO-lightgrey?style=for-the-badge)
+](https://corporate-entity.itch.io/greenhub)
 
 Use GitHub as a Continuous Deployment Engine to Game Platforms using Electron and Cordova.
 
