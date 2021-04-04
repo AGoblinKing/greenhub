@@ -11,14 +11,19 @@
 	"scripts": {
 		"dev": "electron . --dev",
 		"pack": "electron-builder --dir",
-		"dist": "electron-builder ",
+		"dist": "electron-builder --linux",
+		"dist-all": "electron-builder --linux --win --mac",
 		"start": "electron .",
 		"android": "cordova build --release --no-telemetry"
 	},
 	"build": {
 		"appId": "GreenHub",
 		"mac": {
-			"category": "app.game"
+			"category": "app.game",
+			"target": "default"
+		},
+		"linux": {
+			"target": "default"
 		},
 		"win": {
 			"fileAssociations": [
