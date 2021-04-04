@@ -20,6 +20,7 @@ Also provides an example installable Progressive Web Application(PWA).
   - store as a release
 - [x] Setup Deployment Actions
   - Itch
+  - CloudFlare Pages
 - [x] Setup PWA
 - [ ] Ensure overlay works
 - [ ] Documentation/Examples
