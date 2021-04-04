@@ -36,11 +36,11 @@
         <meta name="color-scheme" content="light dark">
 				<meta name="theme-color" content="green">
 				
-				<link rel="manifest" href="/manifest.json" />
-				<link rel="icon" type="image/png" href="/favicon.png" />
-				<link rel="apple-touch-icon" href="/favicon_smol.png">
+				<link rel="manifest" href="manifest.json" />
+				<link rel="icon" type="image/png" href="favicon.png" />
+				<link rel="apple-touch-icon" href="favicon_smol.png">
 
-        <link rel="stylesheet" href="/css/index.css">
+        <link rel="stylesheet" href="css/index.css">
 				
         <title>Hello GreenHub</title>
     </head>
@@ -66,7 +66,7 @@
 		// service stuff below
 		if ('serviceWorker' in navigator) {
 			window.addEventListener('load', function () {
-				navigator.serviceWorker.register('/service.js').then(
+				navigator.serviceWorker.register('service.js').then(
 					function (registration) {
 						// Registration was successful
 						console.log(
