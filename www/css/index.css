@@ -1,8 +1,10 @@
 html,
+document,
 body {
 	background-color: #222;
 	color: green;
 	overflow: hidden;
+	transition: all 2s ease-in-out;
 }
 .svg {
 	width: 100%;

@@ -1,0 +1,30 @@
+{
+	"name": "GreenHub deploys everywhere",
+	"short_name": "GreenHub",
+	"icons": [
+		{
+			"src": "/favicon_smol.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "/favicon.png",
+			"type": "image/png",
+			"sizes": "512x512",
+			"purpose": "any maskable"
+		}
+	],
+	"start_url": "/?source=pwa",
+	"theme_color": "green",
+	"background_color": "green",
+	"scope": "/",
+	"description": "Deploy your web applications everywhere with GreenHub",
+	"display": "standalone",
+	"shortcuts": [
+		{
+			"name": "ShortCut",
+			"description": "An Example shortcut!",
+			"url": "/example_url"
+		}
+	]
+}
