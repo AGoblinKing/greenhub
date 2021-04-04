@@ -1,4 +1,4 @@
-const CACHE_NAME = 'greenhub-1'
+const CACHE_NAME = 'greenhub-2'
 const urlsToCache = ['/', '/index.html', '/css/index.css']
 
 self.addEventListener('install', (e) => {

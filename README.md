@@ -65,4 +65,4 @@ A developer commits a bunch of client files to the repo which triggers GitHub Ac
 
 # Deploy a Static Website
 
-    - CloudFlare Pages [https://pages.cloudflare.com/](https://pages.cloudflare.com/)
+- [CloudFlare Pages](https://pages.cloudflare.com/)
