@@ -2,6 +2,7 @@
 	"name": "green-hub",
 	"version": "0.0.2",
 	"author": "A Goblin King",
+	"email": "king@goblin.life",
 	"license": "Apache-2.0",
 	"description": "Deploy and build games to Steam / Itch using Electron and Greenworks with GitHub Actions",
 	"greenhub": {
