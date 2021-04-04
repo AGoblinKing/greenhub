@@ -22,7 +22,12 @@
 			"target": "default"
 		},
 		"linux": {
-			"target": "default"
+			"category": "Game",
+			"target": [
+				"deb",
+				"rpm",
+				"freebsd"
+			]
 		},
 		"win": {
 			"fileAssociations": [
