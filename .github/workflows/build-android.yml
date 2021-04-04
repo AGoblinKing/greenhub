@@ -1,4 +1,4 @@
-name: Build a GreenHub Project
+name: Android
 on:
   push:
     branches: ['main']
@@ -33,9 +33,8 @@ jobs:
       - uses: 'marvinpinto/action-automatic-releases@latest'
         with:
           repo_token: '${{ secrets.GITHUB_TOKEN }}'
-          automatic_release_tag: 'latest'
+          automatic_release_tag: 'latest:android'
           prerelease: false
-          title: 'Win/Android Build'
+          title: 'Android'
           files: |
-            dist/*.exe
             platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk

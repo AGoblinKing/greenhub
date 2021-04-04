@@ -1,4 +1,4 @@
-name: Build a GreenHub Project
+name: MacOS
 on:
   push:
     branches: ['main']
@@ -24,6 +24,6 @@ jobs:
           repo_token: '${{ secrets.GITHUB_TOKEN }}'
           automatic_release_tag: 'latest:mac'
           prerelease: false
-          title: 'Mac Build'
+          title: 'Mac'
           files: |
             dist/*.zip

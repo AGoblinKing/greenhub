@@ -1,11 +1,11 @@
-name: Linux
+name: Windows
 on:
   push:
     branches: ['main']
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@master
 
@@ -16,14 +16,14 @@ jobs:
 
       - run: npm ci
 
-      - name: Build
+      - name: Build Windows
         run: npm run dist
 
       - uses: 'marvinpinto/action-automatic-releases@latest'
         with:
           repo_token: '${{ secrets.GITHUB_TOKEN }}'
-          automatic_release_tag: 'latest:linux'
+          automatic_release_tag: 'latest:win'
           prerelease: false
-          title: 'Linux'
+          title: 'Win'
           files: |
-            dist/*.zip
+            dist/*.exe
