@@ -40,7 +40,8 @@
 	"cordova": {
 		"plugins": {
 			"cordova-plugin-whitelist": {}
-		}
+		},
+		"platforms": []
 	},
 	"main": "./electron/greenhub.js",
 	"devDependencies": {

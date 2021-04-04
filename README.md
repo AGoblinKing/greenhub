@@ -2,8 +2,12 @@
 
 [![](https://img.shields.io/badge/ITCH.IO-lightgrey?style=for-the-badge)
 ](https://corporate-entity.itch.io/greenhub)
+|
+[![](https://img.shields.io/badge/PROGRESSIVE_WEB_APP-lightgrey?style=for-the-badge)](https://greenhub.pages.dev/)
 
 Use GitHub as a Continuous Deployment Engine to Game Platforms using Electron and Cordova.
+
+Also provides an example installable Progressive Web Application(PWA).
 
 # Tasks
 
@@ -12,6 +16,7 @@ Use GitHub as a Continuous Deployment Engine to Game Platforms using Electron an
   - store as a release
 - [x] Setup Deployment Actions
   - Itch
+- [x] Setup PWA
 - [ ] Ensure overlay works
 - [ ] Documentation/Examples
 
@@ -52,3 +57,7 @@ A developer commits a bunch of client files to the repo which triggers GitHub Ac
 
     - [ ] ???
     - [ ] Its released!
+
+# Deploy a Static Website
+
+    - CloudFlare Pages [https://pages.cloudflare.com/](https://pages.cloudflare.com/)
