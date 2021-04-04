@@ -5,11 +5,11 @@
 \-
 [![](https://img.shields.io/badge/PROGRESSIVE_WEB_APP-darkgreen?style=for-the-badge)](https://greenhub.pages.dev/)
 \-
-[![](https://img.shields.io/badge/ANDROID-darkgreen?style=for-the-badge)](https://github.com/AGoblinKing/greenhub/releases/download/android/app-release-unsigned.apk)
+[![](https://img.shields.io/badge/ANDROID-darkgreen?style=for-the-badge)](./releases/download/android/app-release-unsigned.apk)
 \-
-[![](https://img.shields.io/badge/WINDOWS-darkgreen?style=for-the-badge)](https://github.com/AGoblinKing/greenhub/releases/download/win/green-hub.0.0.2.exe)
+[![](https://img.shields.io/badge/WINDOWS-darkgreen?style=for-the-badge)](./releases/download/win/green-hub.0.0.2.exe)
 \-
-[![](https://img.shields.io/badge/LINUX-darkgreen?style=for-the-badge)](https://github.com/AGoblinKing/greenhub/releases/tag/linux)
+[![](https://img.shields.io/badge/LINUX-darkgreen?style=for-the-badge)](./releases/tag/linux)
 
 Use GitHub as a Continuous Deployment Engine to Game Platforms using Electron and Cordova.
 
