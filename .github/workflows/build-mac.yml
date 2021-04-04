@@ -1,0 +1,29 @@
+name: Build a GreenHub Project
+on:
+  push:
+    branches: ['main']
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@master
+
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+
+      - run: npm ci
+
+      - name: Build
+        run: npm run dist
+
+      - uses: 'marvinpinto/action-automatic-releases@latest'
+        with:
+          repo_token: '${{ secrets.GITHUB_TOKEN }}'
+          automatic_release_tag: 'latest:mac'
+          prerelease: false
+          title: 'Mac Build'
+          files: |
+            dist/*.zip

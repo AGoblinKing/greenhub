@@ -11,8 +11,7 @@
 	"scripts": {
 		"dev": "electron . --dev",
 		"pack": "electron-builder --dir",
-		"dist": "electron-builder --linux",
-		"dist-all": "electron-builder --linux --win --mac",
+		"dist": "electron-builder",
 		"start": "electron .",
 		"android": "cordova build --release --no-telemetry"
 	},
