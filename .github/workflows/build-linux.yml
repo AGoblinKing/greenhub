@@ -26,4 +26,7 @@ jobs:
           prerelease: false
           title: 'Linux'
           files: |
+            dist/*.freebsd
+            dist/*.deb
+            dist/*.rpm
             dist/*.zip
